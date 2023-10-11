@@ -1,5 +1,6 @@
 import openai
-openai.api_key = "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"
+
+openai.api_key = process.env.APIKEY
 
 def AlisterGPT(prompt):
     response = openai.ChatCompletion.create(
